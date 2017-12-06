@@ -90,7 +90,6 @@ class Citizens:
 
 class Elites:
 
-
     def __init__(self, elites):
         '''
         Container for all elites
