@@ -1,0 +1,314 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{subcaption}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{minted}
+\usepackage{mdframed}
+% \usepackage{lineno}
+% \usepackage{fullpage}
+% \linenumbers
+\usepackage{pslatex}
+\usepackage{apacite}
+\usepackage{graphicx}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{pgfplots}
+\usepackage{xcolor, colortbl}
+\hypersetup{
+    colorlinks,
+    linkcolor={cyan!20!red},
+    urlcolor={cyan!80!green},
+    citecolor={cyan!80!blue}
+}
+
+\definecolor{light-gray}{HTML}{F0F0F0}
+
+% \usepackage{tabularx,adjustbox}
+
+\usepackage{gb4e}  % linguistic examples
+\noautomath
+
+\usepackage{amsmath}
+
+\newcommand{\pdone}{\tau_1^*}
+\newcommand{\pdtwo}{\tau_2^*}
+\newcommand{\pds}{(\pd1, \pd2)}
+\newcommand{\fg}{f_{ground}}
+\newcommand{\fe}{f_{excited}}
+
+\title{Notes on cultural evolution of emergent group-level traits applied to 
+  bifurcation of political language and conceptualization \\ {\small COGS 269 Fall 2017 Final Paper}}
+
+\author{{\bf Matthew Turner}}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}\label{intro}
+
+This paper explores some issues in language use as a group-level trait. 
+I begin with a motivation below: I think a verbal model 
+articulated by George Lakoff is promising, but lacks a serious theoretical
+social science foundation. I believe a formal model of cultural
+group selection that accounted for emergent group formation could provide
+the necessary foundation for Lakoff's verbal model. Since Lakoff's model 
+is about the distribution of concepts in individuals' heads, it's necessary
+to have a representation of concepts, and I suggest one that I think could work
+in an emergent group-level trait framework. I continue on to explore the 
+iterated learning model for the evolution of language, and evaluate it in 
+comparison with a fledgling formal model of group language use as an
+emergent group-level trait.
+
+\subsection{Motivation} \label{motivation}
+
+What causes members of a population to interpret the same 
+word in different ways? The case of a word having multiple meanings is 
+technically known as polysemy. Language has the problem of persistent 
+underdeterminism because the world around us is constantly changing. If 
+the world to which our language ultimately refers is changing faster than
+language, language can't express everything in the world. However, language
+changes more rapidly than genes. In this way, languages can fit the mold of
+biology, but better language can serve as a basin of attraction for genetic
+evolution. In other words, language/communication evolves culturally 
+towards optimality given a particular biological machine. However, this 
+biological machine encoding will self-optimize for the language family that 
+is used among the population it encodes. 
+Language is a clumsy way to talk about language, is it not? 
+
+Language also seems
+to be a social marker: we identify who to work with based on the language they
+speak \cite{Smaldino2017b}. 
+The purpose of this review is to identify the linkages between language evolution
+and the cultural evolution of groups and group-level traits.
+
+In the political realm, polysemy of words like \emph{justice}, \emph{liberty},
+and \emph{freedom} is unavoidable. George Lakoff has suggested 
+bifurcation of political opinion and conceptualization in the United States is
+due to the
+human tendency to think of the nation as a family. He argues ``conservatives''
+and ``progressives'' don't share the same conception of the family prototype.
+Lakoff claims the progressive family prototype is that of a ``nurturant parent family,''
+where parent roles are not gendered and corporal punishment is not used or
+accepted. On the other hand, in Lakoff's model, conservatives
+conceptual prototype of the family is supposed to be a ``strict father family.''
+In the strict father family the father has ultimate and unquestioned 
+sovereignty over all other members of the household. Violence is to be used
+to protect that sovereignty \cite{Lakoff1996}. 
+While the details of this model are questionable
+on a number of grounds, the general idea that concepts are interrelated,
+interdependent, and hierarchical has about a forty-year history in cognitive
+science, starting perhaps with \citeA{Rosch1975}. I am inspired by
+Lakoff's work to better understand this conceptual bifurcation, and to 
+express his ideas in the language of \textit{The Cultural Evolution of 
+Emergent Group-level Traits} as expressed by \cite{Smaldino2014}.
+
+I think Lakoff's hypothesis 
+could be addressed and formalized using the appropriate cultural evolutionary theory.
+One important question cultural evolutionary theory could answer is,
+What is the direction of causality, if there is one, in the case of
+conceptual bifurcation in Unites States politics? 
+That is, were there first progressives and
+conservatives, or were there first differences of family conceptualization, and
+in either case how do these concepts interact? 
+\citeA{Lakoff2014} provides a framework to 
+develop a neurological understanding of conceptual bifurcation, which could
+assist in further development of the psychological underpinnings of any 
+cultural evolutionary model.
+
+One successful approach to modeling language evolution is the iterated learning
+model. One issue is that language evolution dynamics are lost as solutions are
+found only for equilibrium distributions of language types \cite{Smith2008}.
+Of course in biology a being in equilibrium is dead! Therefore I suggest an 
+approach to studying the dynamics of iterated learning that I hope will
+have applications to quantifying and modeling the evolution of language away
+from equilibrium. New measures for ``polarization'' can define what a group is,
+within a certain tolerance. Information theory will help us quantify the difference
+between clusters.
+
+\section{The Cultural Evolution of Emergent Group-level Traits}
+\label{sec:smaldino-summary}
+
+I will try to argue that language, or, equivalently, internal conceptual relationships,
+could be considered an emergent group-level trait, as articulated by
+\citeA{Smaldino2014}. An emergent group-level trait is, for example, ``the
+music rather than the rock band,'' or ``the sailing ship's voyage rather than
+the crew positions.'' Thus, the emergent behavior is the group-level trait. 
+This is distinguished from collective behaviors, such as flocking. Collective
+behaviors ``result from a number of interchangable individuals acting
+independently.'' In another example, Smaldino compares a Roman legion to 
+a barbarian horde, suggesting that legioning allows individually-weaker
+Roman legionnaires to defeat individually-stronger barbarians. Thus, to map
+this to the Lakoff model, I suppose the emergent group-level trait 
+for conservatives is ``conserving'' and progressives it's ``progressing.''
+In seriousness, though, this model seems to pose some challenges for naming
+these not-collective-but-emergent-group-level behaviors. 
+
+Why, in the theory of the cultural evolution of emergent group-level traits
+should music or a ship's voyage be the replicator that's ``selected for?'' 
+In the emergent group-level trait framework, ``group-level traits
+exist fundamentally at the level of groups and can therefore only be defined 
+in those terms.'' As a first step toward recasting Lakoff's hypothesis, 
+I believe we can identify some combinations of traits that enable
+the differentiation between progressive and conservative. In this way, being
+progressive is still the emergent group-level trait. Progressive 
+political action requires not just a single set of trait values, but the
+interaction of many individuals' traits. The challenge, that I don't see
+a clear answer to, is how to assign a value to a particular
+emergent group-level trait, either in an absolute sense or in relationship
+to other emergent group-level traits. 
+
+One challenge I see that I do have an idea how to answer is that of determining
+how many groups there are at any given time. A preliminary challenge, for
+applying the theory of \citeA{Smaldino2014} to the Lakoff problem, is to
+determine a representation for concepts of an individual that can combine with 
+other conceptual representations of other individuals to create 
+emergent group-level conceptual systems. There are many ways for the meaning
+of words to be associated with the meanings of other words. One popular
+one is a vector space model of word embeddings in a corpus, for example
+using the word2vec algorithm \cite{Mikolov2013a}. Each word appearing in
+the corpus is assigned a vector based on how often it appears in the same
+phrase with other words. Leaving out many details, one is left with a data
+structure in which every row is a $M-$dimensional representation of the
+word's meaning. Amazingly, using word2vec, one can perform conceptual 
+arithmetic with properly trained models. For example, using the Google News
+word embeddings provided as part of the code and data accompaniment to 
+\citeA{Mikolov2013a}, the closest vector to the nearest word vector to the 
+result of the vector arithmetic \texttt{Germany + France - Paris} is  
+\texttt{Berlin}. So, I propose that we can represent a collection of concepts
+as a matrix, or equivalently a flattened vector of the entire conceptual system. 
+Then, assuming we are working with flattened concept vectors, we can define
+a similarity measure between individuals' conceptual system vectors. Given
+that, some kind of clustering model could be fit to the
+points in conceptual space defined by each individual's conceptual system. 
+The distribution within clusters can tell us about how each cluster might
+generate group-level traits that persist because they have found a way to
+be self-perpetuating. An oustanding question: mustn't this self-perpetuation
+still act through increasing individual payoffs?
+
+\section{Iterated learning models of language evolution}
+
+Iterated learning is meant to model the interaction between biological 
+biases towards certain types of language and the cultural evolution of
+language. 
+The iterated learning model (ILM) is a specialized Markov model. In a Markov
+model, the future state depends on only the previous state of the system, 
+a property known as the Markov property. 
+a population is split into $N$ subpopulations,
+with the percentage of the $i^{th}$ subpopulation denoted $p_i$. For iterated
+learning of language, $p_i$ is said to be the fraction of the population
+speaking language $i$. When we want
+to include time dependence, we add a $t$ index after a comma, $p_{i,t}$.
+The difference equation for the prevalence of each subpopulation is
+
+\begin{equation}
+  p_{i,t+1} = \sum_{j=1}^N Q_{ji} p_{j,t}
+\label{eq:update}
+\end{equation}
+\noindent
+$Q_{ij}$ is the transition matrix. We could write this more compactly in
+matrix-vector notation as $p_{t+1} = Qp_{t}$, where $p_t$ is the vector of all
+$p_{i,t}$. In ILM $Q$ is assumed to be time independent;  % possibly remove
+when the transition matrix is time independent, the Markov chain is  % possibly remove
+labelled \emph{homogeneous} \cite[p. 445]{Griffiths2007a}. The ILM further assumes  % possibly remove
+that the transition matrix has exactly one eigenvalue of unit magnitude \cite[p. 446]{Griffiths2007a}.  % possibly remove
+Briefly, this means that there exists a \emph{stationary state} 
+$p^*$ such that $p^* = Qp^*$. In other words, no iteration needs to be 
+done to find the final state of the system, one needs only to find the first
+eigenvector of $Q$, and it turns out to be $p^*$. An alternative, intuitive
+definition is
+
+\begin{equation}
+  p^* = \lim_{t \to \infty} Q^t p_{t=0}
+\end{equation}
+\noindent
+for any valid distribution $p_{t=0}$, i.e. $\sum_i p_{i,t=0} = 1$. 
+In other words, we could equivalently find the stationary state if we iterated
+as defined in Equation~\ref{eq:update}
+until $|p_{t+1} - p_{t}|$ had decreased to below some tolerance.
+
+Up to this point, I have just presented some facts about the type of Markov
+chains assumed to be at work in the ILM. We have covered the ``I'' in ILM:
+iteration. Where is ``learning''? It is in the values of $Q_{ij}$ themselves.
+In the iterated learning model of language change, these represent the 
+probability that a speaker of language $i$ at time $t$ will speak language
+$j$ at time $t+1$. Each speaker is assumed to be 
+exposed to a certain number of utterances, or data, $d$, at each time step. 
+The learner in this model must decide which language they heard based on this
+data and choose the language that they believe is most representative of the
+data they have observed. In terms of probabilities, we modify notation of 
+Equation 4.6 in \cite{Smith2008} and write
+
+\begin{equation}
+  Q_{ij} = P(\text{choose $i$ at $t+1$}~|~\text{speaker of $j$ at $t$}) = \sum_d P_L(\text{choose $i$}|d) P(d|\text{speaker of $j$})
+  \label{eq:qij-elements}
+\end{equation}
+
+The goals of ILM are typically to characterize $p^*$ for some set of 
+parameters. These parameters include the data ``bottleneck,'' or how many example data $d$ 
+a learner sees, i.e.\ the number of summands in Equation~ref{eq:qij-elements}.
+Learning is parameterized by choice of calculating these
+probabilities written in Equation~\ref{eq:qij-elements}. Further detail about
+how these probabilities are calculated is important, but left to the 
+references. The important takeaway is that the dynamics are entirely determined
+by a time-invariant transition matrix $Q$. The typical approach is to find
+a stationary distribution $p^*$ of $Q$, then analyze how the stationary
+distribution changes with changes in learning parameters, that eventually
+result in changes in the calculation of probabilities in Equation \ref{eq:qij-elements}.
+
+Immediately we can see that this particular approach will not do for
+emergent group-level traits, or any \emph{emergent} trait for that matter. 
+Any emergence that had occurred happened before the stationary state was
+reached. Stationary states are in equilibrium, and equilibrium is death! 
+Perhaps Markov chains could be interesting, but it would have to be in 
+the time before a stationary state was reached. Transition matrices
+could be based on data in the form of expressions of traits. In the
+Lakoff-inspired concepts model I proposed, traits are vector representations of 
+concepts. Learners could
+have a similar updating strategy as in ILM. What we gain is the capability
+to simultaneously track the flow of information within and between groups
+based on the differences in traits. Given the right dynamics, groups could
+come into and out of existence. When equilibrium is reached, the groups that
+remain can be identified as attractor groups.
+
+\section{Conclusion}\label{conclusion}
+
+Conceptualizing language use as the exchange of information about individual
+traits, we have seen the potential of how iterated learning methods could
+work with the framework of emergent group-level traits. Iterated learning
+in the limit of $t \to \infty$, as practiced by \cite{Smith2008}, 
+will not reveal emergence. One response from Doebeli \& Simon to the target
+article of \cite{Smaldino2014} suggested their model \cite{Simon2013} should be adapted and
+then adopted as the formal model of cultural evolution of emergent group-level
+traits. However, this model they suggest
+is not directly applicable, most importantly because its model only allows
+parent-child group divergence. An individual may not change groups in its lifetime in
+this model. Group size change is determined by how many
+offspring of a parent in group $i$ are born as being in group $j$. Clearly 
+pre-existing groups that one could be born into are not appropriate for
+emergent group-level traits. This claim would require that groups and
+the group-level traits define a group, which I think holds.
+\citeA{Simon2013} do provide an
+important framework for building increasingly expressive models of 
+group formation, building a deterministic partial differential equation model
+of group selection from a Markovian model \cite{Simon2013}. 
+This could be important since trying to fit a mixture model to every 
+timestep to identify emergent group-level traits may prove computationally
+infeasible, especially as $N$ becomes large. All this is still general, there
+is no payoff function yet defined for the individuals that form groups. 
+While details must be left until later, I think interesting and relevant
+dynamics can be found using a reinforcement learning approach \cite{Sutton2016} 
+combined with some kind of economics, so that behavior has a payoff landscape to
+navigate, which could result in emergent groups as evidenced by their group-level
+traits.
+
+
+\bibliographystyle{apacite}
+\bibliography{/Users/mt/workspace/papers/library.bib}
+
+\end{document}
